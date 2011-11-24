@@ -11,7 +11,7 @@ function date_to_string($str) {
 	if ($month == 02) { $month1 = 'Feb'; }
 	if ($month == 03) { $month1 = 'Mar'; }
 	if ($month == 04) { $month1 = 'April'; }
-	if ($month == 05) { $month1 = 'may'; }
+	if ($month == 05) { $month1 = 'May'; }
 	if ($month == 06) { $month1 = 'Jun'; }
 	if ($month == 07) { $month1 = 'Jul'; }
 	if ($month == 08) { $month1 = 'Aug'; }
@@ -19,6 +19,7 @@ function date_to_string($str) {
 	if ($month == 10) { $month1 = 'Oct'; }
 	if ($month == 11) { $month1 = 'Nov'; }
 	if ($month == 12) { $month1 = 'Dec'; }
-	return $month1.". ".$day;
+	return $day. ". ".$month1.". ".$year;
 }
+
 ?>
