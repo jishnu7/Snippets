@@ -1,5 +1,8 @@
 <?php
 
+// Covert mysql timestamp to human readable date format 
+// eg: '2011-11-24 01:19:51' to '24 Nov 2011'
+
 function date_to_string($str) {
 	$date = $str;
 	$date = explode(" ", $date);
