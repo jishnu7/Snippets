@@ -1,0 +1,5 @@
+// Auto select last boot entry in grub2
+
+GRUB_DEFAULT=saved
+GRUB_SAVEDEFAULT=true
+
