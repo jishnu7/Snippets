@@ -1,0 +1,5 @@
+
+revert previous commit
+	git reset HEAD^
+	git reset --hard HEAD^
+
