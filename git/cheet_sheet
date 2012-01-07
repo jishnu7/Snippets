@@ -3,3 +3,5 @@ revert previous commit
 	git reset HEAD^
 	git reset --hard HEAD^
 
+delete : --cached to keep file
+	git rm filename --cached
