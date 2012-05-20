@@ -1,0 +1,5 @@
+
+# Find files with size 0
+find ./ -size  0
+# Delete
+find /tmp -size  0 -print0 |xargs -0 rm
