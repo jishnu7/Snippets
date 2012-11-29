@@ -1,0 +1,9 @@
+
+show databases/tables;
+create database db_name;
+use db_name;
+describe table_name;
+drop db_name/tablename;
+
+
+mysqldump -u username -p --no-data db_name > file.sql
