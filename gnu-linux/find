@@ -3,3 +3,6 @@
 find ./ -size  0
 # Delete
 find /tmp -size  0 -print0 |xargs -0 rm
+
+# Find file
+find ./ -regex ".*\(php\|html\|js\)$"
