@@ -1,0 +1,2 @@
+# Delete all merged  branches
+git branch -d $( git branch --merged | grep -v '^\*' | grep -v 'master' )
