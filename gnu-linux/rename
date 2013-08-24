@@ -1,0 +1,11 @@
+# show files 
+-n
+
+# replace
+rename s/"SEARCH"/"REPLACE"/g *
+
+# prefix
+rename s/'^'/'MyPrefix'/ *
+
+# suffix
+rename s/'$'/'MySuffix'/ *

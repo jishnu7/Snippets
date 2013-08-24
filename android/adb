@@ -1,0 +1,14 @@
+Backup
+ * boot into recovery
+ * adb backup -f boot.img boot
+ * adb backup -f system.img system
+ * adb backup -f data.img data
+
+Restore
+ * boot into recovery
+ * adb shell echo -n boot > /tmp/ro.bu.restore
+ * adb restore boot.img
+ * adb shell echo -n system > /tmp/ro.bu.restore
+ * adb restore system.img
+ * adb shell echo -n data > /tmp/ro.bu.restore
+ * adb restore data.img

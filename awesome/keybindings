@@ -1,0 +1,31 @@
+
+# restart awesome
+ctrl + super + r
+
+# fullscreen
+super + f
+
+# increase/decrease width
+super + j/l
+
+# change layout
+super + space
+
+# next/prev window
+super + j/k
+
+# toggle floating
+ctrl + super + space
+
+# raise window
+super + t
+
+# maximize
+super + m
+
+# tag
+prev                        : super + esc
+display only this tag       : super + #
+toggle display of tag       : super + ctrl + #
+move windto to tag          : super + shift + #
+
