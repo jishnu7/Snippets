@@ -1,0 +1,16 @@
+
+# Insert unicode char
+ctrl-v u20b9
+
+# Insert tab
+ctrl-v ctrl-i
+
+# Change file type
+setfiletype xml
+
+# convert tabs to spaces
+set expandtab
+retab!
+# spaces to tab
+set noexpandtab
+retab!

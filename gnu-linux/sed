@@ -1,0 +1,3 @@
+
+# replace string in multiple files: old with new
+find . -name "*.js" -exec sed -i "s/old/new/g" '{}' \;

@@ -12,3 +12,7 @@ mysqldump -u username -p --no-data db_name > file.sql
 
 #create user and give permission to db
 GRANT ALL ON database.* TO username@localhost IDENTIFIED BY 'password';
+
+ALTER TABLE table_name ADD column varchar(30);
+ALTER TABLE table_name ADD column varchar(30) AFTER name;
+ALTER TABLE table_name ADD column varchar(30) FIRST;
