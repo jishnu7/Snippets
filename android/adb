@@ -12,3 +12,6 @@ Restore
  * adb restore system.img
  * adb shell echo -n data > /tmp/ro.bu.restore
  * adb restore data.img
+
+Logcat
+ * adb logcat | grep `adb shell ps | grep com.example.package | cut -c10-15`
