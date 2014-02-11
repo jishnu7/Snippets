@@ -8,6 +8,8 @@ drop db_name/tablename;
 
 # dump schema
 mysqldump -u username -p --no-data db_name > file.sql
+# importing
+mysql -u username -p dbname < file.sql
 
 
 #create user and give permission to db
