@@ -25,3 +25,8 @@ zg add word to dictionary
 zw mark as wrong
 zug/zuw undo
 
+# window spli
+To change two vertically split windows to horizonally split
+Ctrl-W t Ctrl-W K
+Horizontally to vertically:
+Ctrl-W t Ctrl-W H

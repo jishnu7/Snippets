@@ -9,3 +9,6 @@ find ./ -regex ".*\(php\|html\|js\)$"
 
 # Move all files to a different directory
 find ./ -maxdepth 1 -type f -print0 | xargs -0 -I {} mv {} /new-location/
+
+# total size of files
+find ./  -ls | grep "_up" | awk '{s+=$7} END {print "Total SIZE: " s}

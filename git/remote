@@ -1,2 +1,5 @@
 # list remote branch
 git remote -v
+
+# push to different remote branch
+git push origi local_branch:remote_branch
