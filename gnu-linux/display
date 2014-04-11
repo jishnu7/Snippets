@@ -14,4 +14,4 @@ xrandr --newmode $(gtf 1280 800 68 | grep Modeline | sed s/Modeline\ // | tr -d 
 xrandr --addmode VGA 1280x800_68.00
 
 xrandr --output VGA --off
-
+xrandr --output eDP1 --auto

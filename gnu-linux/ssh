@@ -1,0 +1,2 @@
+# sort, tar and compy file from remote
+ssh bar 'cd /tmp/foo ; ls | sort -r | tar -cT -' | tar -xv
