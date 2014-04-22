@@ -15,6 +15,12 @@ mysql -u username -p dbname < file.sql
 #create user and give permission to db
 GRANT ALL ON database.* TO username@localhost IDENTIFIED BY 'password';
 
+create table table_name(id int not null, name varchar(30) not null, primary key(id))
+
+
 ALTER TABLE table_name ADD column varchar(30);
 ALTER TABLE table_name ADD column varchar(30) AFTER name;
 ALTER TABLE table_name ADD column varchar(30) FIRST;
+alter table table_name drop primary key;
+alter table table_name add primray key (key);
+alter table table_name change id userid varchar(30);
