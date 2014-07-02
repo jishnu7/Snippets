@@ -1,0 +1,5 @@
+#!/bin/sh
+# print whether GPU is active or not
+lspci -vnnn | perl -lne 'print if /^\d+\:.+(\[\S+\:\S+\])/' | grep VGA
+dmesg | grep bbswitch
+cat /proc/acpi/bbswitch 
