@@ -1,0 +1,5 @@
+# creating gif image using ffmpeg
+
+ffmpeg -i output.mp4 -vf scale=320:-1 -r 15 frames/ffout%03d.png
+
+convert -delay 8 -loop 0 frames/ffout*.png output.gif

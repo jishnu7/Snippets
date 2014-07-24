@@ -1,0 +1,4 @@
+#build package
+makepkg -Acs
+#install
+pacman -U x.pkg.tar.xz

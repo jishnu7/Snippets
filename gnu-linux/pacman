@@ -1,0 +1,6 @@
+# find the package which owns the file.
+pacman -Qo /path/to/file
+
+# clear package cache
+pacman -Sc
+pacman -Scc
