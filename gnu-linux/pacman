@@ -4,3 +4,8 @@ pacman -Qo /path/to/file
 # clear package cache
 pacman -Sc
 pacman -Scc
+
+
+# orphans
+pacman -Qdt
+pacman -Rs $(pacman -Qtdq)
