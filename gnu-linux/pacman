@@ -5,7 +5,9 @@ pacman -Qo /path/to/file
 pacman -Sc
 pacman -Scc
 
-
 # orphans
 pacman -Qdt
 pacman -Rs $(pacman -Qtdq)
+
+#packages
+pacman -Qt #t packages not required by any package
