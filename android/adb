@@ -15,3 +15,10 @@ Restore
 
 Logcat
  * adb logcat | grep `adb shell ps | grep com.example.package | cut -c10-15`
+
+
+removes the app but leaves the data and cache directories.
+ * adb uninstall -k com.mycompany.myapp
+
+Clean app data
+ * adb shell pm clear com.package.foo
