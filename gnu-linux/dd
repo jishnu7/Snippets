@@ -1,0 +1,4 @@
+# show the progress of dd
+
+sudo kill -USR1 $(pgrep '^dd')
+dd if=/dev/urandom | pv | dd of=/dev/null

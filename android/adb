@@ -22,3 +22,16 @@ removes the app but leaves the data and cache directories.
 
 Clean app data
  * adb shell pm clear com.package.foo
+
+Keyevents
+ * adb shell input keyevent 82
+
+ 82 - unlock
+ 26 - screen toggle
+
+Apps
+ * adb shell pm list packages #installed apps
+ * adb shell pm path com.example.someapp #show path of an app
+
+ * adb backup -apk com.twitter.android #single app
+ * dd if=backup.ab bs=24 skip=1 | openssl zlib -d > backup.tar #.ab to tar conversion

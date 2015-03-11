@@ -1,3 +1,6 @@
 # cut video
 # cut 5 seconds, starting from 5 minutes, 3 seconds and 123 milliseconds.
 ffmpeg -i input.mp4 -ss 00:05:03.123 -t 5 -c:v libx264 -c:a libfaac out.mp4
+
+# to gif
+ffmpeg -t 5 -ss 00:00:10 -i funny.mp4 out.gif
