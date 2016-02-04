@@ -4,6 +4,9 @@
 modprobe btusb
 systemctl start bluetooth
 
+# Unblock
+rfkill list
+rfkill unblock <id>
 
 # Connecting
 bluetoothctl
