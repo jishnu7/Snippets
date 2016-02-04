@@ -4,6 +4,10 @@ Backup
  * adb backup -f system.img system
  * adb backup -f data.img data
 
+ * adb backup -all -apk -shared #Backup data + apps
+ * adb restore backup.adb #Restore data from ^ backup
+ * adb logcat | grep BackupManager #See log while restoring data
+
 Restore
  * boot into recovery
  * adb shell echo -n boot > /tmp/ro.bu.restore
@@ -32,6 +36,7 @@ Keyevents
 Apps
  * adb shell pm list packages #installed apps
  * adb shell pm path com.example.someapp #show path of an app
+ * adb pull <path from above command>
 
  * adb backup -apk com.twitter.android #single app
  * dd if=backup.ab bs=24 skip=1 | openssl zlib -d > backup.tar #.ab to tar conversion
