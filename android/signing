@@ -1,0 +1,3 @@
+keytool -genkey -keystore (name).keystore -validity 10000 -alias (name)
+
+jarsigner -keystore （name）.keystore -verbose LunarLander.apk （name）
