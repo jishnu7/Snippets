@@ -40,3 +40,9 @@ Apps
 
  * adb backup -apk com.twitter.android #single app
  * dd if=backup.ab bs=24 skip=1 | openssl zlib -d > backup.tar #.ab to tar conversion
+
+
+Remove carrier bloatware
+ * adb shell cmd pm list packages | grep 'amazon'
+ * adb shell
+ * pm uninstall -k --user 0 <name of package>
