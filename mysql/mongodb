@@ -1,2 +1,5 @@
 # select matching element from array
 db.topchart.find({ 'apps.id': 'org.zooper.zwpro'}, {category: 1, collection: 1, _id: 0, country: 1, 'apps.$': 1})[0]
+
+# does property exist
+db.inventory.find( { qty: { $exists: true} } )
