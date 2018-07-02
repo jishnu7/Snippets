@@ -15,3 +15,6 @@ xrandr --addmode VGA 1280x800_68.00
 
 xrandr --output VGA --off
 xrandr --output eDP1 --auto
+
+# panning
+xrandr --output DP1 --auto --output DP1 --auto --panning 1600x900+1600+0 --scale 2x2 --right-of eDP1

@@ -1,0 +1,8 @@
+# Log
+heroku logs --tail --remote staging
+
+# run bash
+heroku run bash --remote staging
+
+# Restart
+heroku restart --remote staging

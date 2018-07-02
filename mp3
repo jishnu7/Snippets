@@ -1,0 +1,5 @@
+# convert to variable bitrate mp3
+ffmpeg -i inputfile.m4a -c:a libmp3lame -ac 2 -q:a 2 outputfile.mp3
+
+# constant bit rate
+ffmpeg -i inputfile.m4a -c:a libmp3lame -ac 2 -b:a 190k outputfile.mp3

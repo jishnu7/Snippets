@@ -1,0 +1,6 @@
+#! /bin/sh
+# affects only highight/middle click
+xsel --primary | sed $"s/./&\xCC\xB6/g" | xsel --primary
+
+# affects only clipboard text (ctrl-c/ctrl-x and ctrl-v)
+xsel --clipboard | sed $"s/./&\xCC\xB6/g" | xsel --clipboard
