@@ -12,3 +12,11 @@ ffmpeg -t 5 -ss 00:00:10 -i funny.mp4 out.gif
 # 2 = 90CounterClockwise 
 # 3 = 90Clockwise and Vertical Flip
 ffmpeg -i in.mov -vf "transpose=1" out.mov
+
+# reverse video
+ffmpeg -i inputfile.mp4 -vf reverse reversed.mp4
+
+
+# repeat video 4 times
+for i in {1..4}; do printf "file '%s'\n" org_tlp_6553634_1545520908000.mov >> list.txt; done
+ffmpeg -f concat -i list.txt -c copy output.mp4

@@ -18,7 +18,7 @@ Restore
  * adb restore data.img
 
 Logcat
- * adb logcat | grep `adb shell ps | grep com.example.package | cut -c10-15`
+ * adb logcat | grep `adb shell ps | grep com.example.package | awk '{ print $2; }'`
 
 
 removes the app but leaves the data and cache directories.
