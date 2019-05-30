@@ -46,3 +46,7 @@ Remove carrier bloatware
  * adb shell cmd pm list packages | grep 'amazon'
  * adb shell
  * pm uninstall -k --user 0 <name of package>
+
+Screenshot
+ * adb shell screencap -p /sdcard/screen.png
+ * adb shell screencap -p > myfile.jpg
