@@ -50,3 +50,12 @@ Remove carrier bloatware
 Screenshot
  * adb shell screencap -p /sdcard/screen.png
  * adb shell screencap -p > myfile.jpg
+
+Wireless
+ // connect device and run
+ * adb tcpip 5555
+ // disconnect and run this on laptop
+ * adb connect DEVICE_IP:5555
+
+Screen Mirror
+ * Scrcpy: https://github.com/Genymobile/scrcpy
