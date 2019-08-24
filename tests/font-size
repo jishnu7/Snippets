@@ -1,0 +1,1 @@
+printf '\e]710;%s\007' "xft:Inconsolata for Powerline:pixelsize=50"
