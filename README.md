@@ -1,5 +1,5 @@
 # Home
 
-## What is this?
+## Welcome
 
 Random notes, snippets and bookmarks by me.
